@@ -43,7 +43,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Use columns to make it look like a real website layout
-col1, col2 = st.columns([1, 6])
+col1, col2 = st.columns([3, 6])
 with col1:
     st.image("https://img.icons8.com/color/96/000000/lightning-bolt.png", width=50)
 

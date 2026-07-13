@@ -47,8 +47,8 @@ col1, col2 = st.columns([1, 6])
 with col1:
     st.image("https://img.icons8.com/color/96/000000/lightning-bolt.png", width=50)
 
-st.title("Jargon Buster")
-st.subheader("Translate complex documents into plain English.")
+st.title(" ")
+st.subheader(" ")
 import streamlit as st
 import requests
 from groq import Groq

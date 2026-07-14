@@ -1,27 +1,3 @@
-import plotly.graph_objects as go
-import streamlit as st
-
-# The Semicircle Gauge Code
-fig = go.Figure(go.Indicator(
-    mode = "gauge+number",
-    value = 75, # You would change this to your AI's generated number!
-    domain = {'x': [0, 1], 'y': [0, 1]},
-    title = {'text': "Touch Grass Index"},
-    gauge = {
-        'axis': {'range': [None, 100]},
-        'bar': {'color': "#FF7E5F"}, # Matches your button color
-        'steps': [
-            {'range': [0, 50], 'color': "rgba(255,255,255,0.1)"},
-            {'range': [50, 100], 'color': "rgba(255,255,255,0.2)"}
-        ]
-    }
-))
-
-# Make the background transparent to match your sleek UI
-fig.update_layout(paper_bgcolor="rgba(0,0,0,0)", font={'color': "white"})
-
-# Display it in Streamlit
-st.plotly_chart(fig, use_container_width=True)
 import streamlit as st
 import requests
 from groq import Groq
